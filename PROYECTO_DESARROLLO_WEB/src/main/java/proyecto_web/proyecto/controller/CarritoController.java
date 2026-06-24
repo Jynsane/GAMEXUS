@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Controller
+//@Controller
 public class CarritoController {
 
     private final CarritoService carritoService;

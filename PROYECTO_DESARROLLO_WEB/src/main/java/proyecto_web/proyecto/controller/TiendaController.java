@@ -19,7 +19,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
 
-@Controller
+//@Controller
 public class TiendaController {
 
     private final JuegoService juegoService;

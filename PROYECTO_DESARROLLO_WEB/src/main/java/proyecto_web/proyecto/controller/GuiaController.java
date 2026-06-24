@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import proyecto_web.proyecto.service.GuiaService;
 
-@Controller
+//@Controller
 public class GuiaController {
 
     private final GuiaService guiaService;

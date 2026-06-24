@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import proyecto_web.proyecto.service.FavoritoService;
 import proyecto_web.proyecto.service.HistorialActividadService;
 
-@Controller
+//@Controller
 public class FavoritoController {
 
     private final FavoritoService favoritoService;

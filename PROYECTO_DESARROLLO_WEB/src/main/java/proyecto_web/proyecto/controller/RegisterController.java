@@ -11,7 +11,7 @@ import proyecto_web.proyecto.model.Usuario;
 import proyecto_web.proyecto.service.HistorialActividadService;
 import proyecto_web.proyecto.service.LoginService;
 
-@Controller
+//@Controller
 public class RegisterController {
 
     private final LoginService loginService;

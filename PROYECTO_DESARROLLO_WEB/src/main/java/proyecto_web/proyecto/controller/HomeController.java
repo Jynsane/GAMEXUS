@@ -10,7 +10,7 @@ import proyecto_web.proyecto.service.HistorialActividadService;
 import proyecto_web.proyecto.service.JuegoService;
 import proyecto_web.proyecto.service.LoginService;
 
-@Controller
+//@Controller
 public class HomeController {
 
     private final LoginService loginService;

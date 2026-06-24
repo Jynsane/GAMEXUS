@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import proyecto_web.proyecto.service.HistorialActividadService;
 
-@Controller
+//@Controller
 public class ActividadController {
 
     private final HistorialActividadService historialActividadService;

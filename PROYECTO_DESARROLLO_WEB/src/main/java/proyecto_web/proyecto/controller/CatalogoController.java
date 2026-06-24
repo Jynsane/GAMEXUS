@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import proyecto_web.proyecto.model.Juego;
 import proyecto_web.proyecto.service.JuegoService;
 
-@Controller
+//@Controller
 public class CatalogoController {
 
     private final JuegoService juegoService;

@@ -19,6 +19,9 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
     private final LoginService loginService;
     private final HistorialActividadService historialActividadService;
 
+    @org.springframework.beans.factory.annotation.Value("${app.frontend.url:/}")
+    private String frontendUrl;
+
     public OAuth2SuccessHandler(LoginService loginService, HistorialActividadService historialActividadService) {
         this.loginService = loginService;
         this.historialActividadService = historialActividadService;
@@ -44,6 +47,6 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
         session.setAttribute("rol", usuario.getRole());
         historialActividadService.registrar(usuario.getUsername(), "LOGIN_GOOGLE", "Inicio de sesión con Google", null);
 
-        response.sendRedirect("http://localhost:4200/");
+        response.sendRedirect(frontendUrl);
     }
 }

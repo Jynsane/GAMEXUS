@@ -10,7 +10,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import proyecto_web.proyecto.service.HistorialActividadService;
 import proyecto_web.proyecto.service.ResenaService;
 
-@Controller
+//@Controller
 public class ResenaController {
 
     private final ResenaService resenaService;

@@ -23,7 +23,7 @@ import proyecto_web.proyecto.model.Juego;
 import proyecto_web.proyecto.service.JuegoService;
 import proyecto_web.proyecto.service.ResenaService;
 
-@Controller
+//@Controller
 public class AdminController {
 
     private final JuegoService juegoService;
