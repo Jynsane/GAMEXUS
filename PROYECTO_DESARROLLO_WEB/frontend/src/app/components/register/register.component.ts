@@ -176,7 +176,4 @@ export class RegisterComponent {
   loginWithGoogle() {
     window.location.href = getApiUrl('/oauth2/authorization/google');
   }
-  
-}
-  
 }
