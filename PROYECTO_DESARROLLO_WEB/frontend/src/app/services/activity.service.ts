@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { getApiUrl } from '../api-config';
 
 export interface ActivityLog {
   id: number;
@@ -15,7 +16,7 @@ export interface ActivityLog {
   providedIn: 'root'
 })
 export class ActivityService {
-  private apiUrl = 'http://localhost:8080/api/actividad';
+  private apiUrl = getApiUrl('/api/actividad');
 
   constructor(private http: HttpClient) {}
 

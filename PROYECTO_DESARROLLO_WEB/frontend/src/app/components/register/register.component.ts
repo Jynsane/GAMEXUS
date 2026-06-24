@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { getApiUrl } from '../../api-config';
 
 
 @Component({
@@ -173,8 +174,9 @@ export class RegisterComponent {
   }
 
   loginWithGoogle() {
-  window.location.href =
-    'http://localhost:8080/oauth2/authorization/google';
+    window.location.href = getApiUrl('/oauth2/authorization/google');
+  }
+  
 }
   
 }

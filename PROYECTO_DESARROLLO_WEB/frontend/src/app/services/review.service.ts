@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { getApiUrl } from '../api-config';
 
 export interface Resena {
   id: number;
@@ -14,7 +15,7 @@ export interface Resena {
   providedIn: 'root'
 })
 export class ReviewService {
-  private apiUrl = 'http://localhost:8080/api/resenas';
+  private apiUrl = getApiUrl('/api/resenas');
 
   constructor(private http: HttpClient) {}
 
