@@ -124,9 +124,9 @@ export class RegisterComponent {
   public errorMessage = signal<string>('');
 
   constructor(
-  private authService: AuthService,
-  private router: Router
-) {}
+    private authService: AuthService,
+    private router: Router
+  ) { }
 
   onSubmit() {
     this.errorMessage.set('');
